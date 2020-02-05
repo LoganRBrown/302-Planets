@@ -32,6 +32,14 @@ public class orbit : MonoBehaviour
 
     }
 
+    /* TODO:
+     * 
+     * Make the moons not coplaner(Tilt so they aren't orbitting the same axis as their planets.)
+     * 
+     * 
+     * 
+     * */
+
     void Update()
     {
         if (isPaused) return;
@@ -63,7 +71,7 @@ public class orbit : MonoBehaviour
 
             Vector3 moonPos = FindOrbitPoint(Time.time, radius);
 
-            transform.position = moonPos + orbitCenter.position;
+            transform.position = moonPos;
         }
 
         else
