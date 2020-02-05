@@ -92,14 +92,14 @@ public class orbit : MonoBehaviour
         if (!oppositeOrbit)
         {
 
-            pos.x += Mathf.Cos((angle / orbitSpeed) + orbitDelay) * mag;
-            pos.z += Mathf.Sin((angle / orbitSpeed) + orbitDelay) * mag;
+            pos.x += Mathf.Cos((angle * orbitSpeed) + orbitDelay) * mag;
+            pos.z += Mathf.Sin((angle * orbitSpeed) + orbitDelay) * mag;
         }
 
         if (oppositeOrbit)
         {
-            pos.x += Mathf.Sin((angle / orbitSpeed) + orbitDelay) * mag;
-            pos.z += Mathf.Cos((angle / orbitSpeed) + orbitDelay) * mag;
+            pos.x += Mathf.Sin((angle * orbitSpeed) + orbitDelay) * mag;
+            pos.z += Mathf.Cos((angle * orbitSpeed) + orbitDelay) * mag;
         }
         return pos;
     }

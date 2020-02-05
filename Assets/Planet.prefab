@@ -99,7 +99,7 @@ MonoBehaviour:
   radius: 6
   resolution: 15
   orbitDelay: 0
-  orbitSpeed: 5
+  orbitSpeed: 1
   isPaused: 0
   fastForward: 0
   rewind: 0
@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetScale: {x: 1, y: 1, z: 1}
-  planetRotationX: 1
-  planetRotationY: 1
-  planetRotationZ: 1
+  planetRotationRateX: 0
+  planetRotationRateY: 0
+  planetRotationRateZ: 0
 --- !u!120 &3983493509250196011
 LineRenderer:
   m_ObjectHideFlags: 0
